@@ -1,0 +1,19 @@
+{
+  "name": "micro-frontend-sample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:home": "cd home && npm start",
+    "start:products": "cd products && npm start",
+    "setup": "cd home && npm install && cd ../products && npm install && cd ..",
+    "start": "run-p start:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "npm-run-all2": "^7.0.1"
+  }
+}
